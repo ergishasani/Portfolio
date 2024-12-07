@@ -22,7 +22,6 @@ body {
     background-color: var(--main_color);
     overflow-y: scroll;
     background-color: #1E1E1E;
-    overflow-x: hidden;
 }
 
 
@@ -53,39 +52,29 @@ nav {
     color: #878787;
     font-weight: bold;
     letter-spacing: 0.6rem;
-    margin-left: 20rem;
-    /* Keep the margin for positioning */
-    position: relative;
-    /* Required for the pseudo-element positioning */
-    display: inline-block;
-    /* Ensures the underline effect aligns correctly */
-    transition: color 0.3s ease;
-    /* Smooth color transition */
+    margin-left: 20rem; /* Keep the margin for positioning */
+    position: relative; /* Required for the pseudo-element positioning */
+    display: inline-block; /* Ensures the underline effect aligns correctly */
+    transition: color 0.3s ease; /* Smooth color transition */
 }
 
 .nav_link:hover {
-    color: #f28a31;
-    /* Change text color on hover */
+    color: #f28a31; /* Change text color on hover */
 }
 
 .nav_link::after {
     content: '';
     position: absolute;
     left: 0;
-    bottom: -5px;
-    /* Adjust to control underline position */
+    bottom: -5px; /* Adjust to control underline position */
     width: 0;
-    height: 3px;
-    /* Thickness of the underline */
-    background-color: #f28a31;
-    /* Underline color */
-    transition: width 0.3s ease;
-    /* Smooth underline animation */
+    height: 3px; /* Thickness of the underline */
+    background-color: #f28a31; /* Underline color */
+    transition: width 0.3s ease; /* Smooth underline animation */
 }
 
 .nav_link:hover::after {
-    width: 100%;
-    /* Full underline on hover */
+    width: 100%; /* Full underline on hover */
 }
 
 nav ul {
@@ -206,9 +195,6 @@ nav a:hover::after {
 
 /* Responsive Styles */
 @media screen and (max-width: 768px) {
-    header{
-        height: 6rem;
-    }
     .nav_links {
         position: fixed;
         top: 0;
@@ -240,9 +226,4 @@ nav a:hover::after {
     .nav_link {
         margin-left: 0;
     }
-}
-
-
-.profile img{
-    width: 10rem;
 }
