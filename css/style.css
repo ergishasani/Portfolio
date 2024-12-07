@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@500&display=swap');
+
+:root {
+    --main_color: #282C33;
+    --secondary_color: #C778DD;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    background-color: var(--main_color);
+    overflow-y: scroll;
+}
+
+
+/* Header */
+
+.hero {
+    width: 100%;
+    height: 200vh;
+}
+
+nav {
+    width: 100%;
+    height: 8rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    position: fixed;
+    z-index: 999;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 32px 0px 8px 0px;
+    background-color: var(--main_color);
+    -webkit-user-select: none;
+    /* Chrome/Safari */
+    -moz-user-select: none;
+    /* Firefox */
+    -ms-user-select: none;
+    /* Internet Explorer/Edge */
+    user-select: none;
+    /* Standard */
+}
+
+.name_holder {
+    width: auto;
+    display: flex;
+    flex-direction: row;
+}
+
+.name_holder img {
+    width: 1.6rem;
+    height: fit-content;
+}
+
+.name_holder a {
+    font-size: 1.6rem;
+    color: #fff;
+    margin-left: 1rem;
+    font-weight: 700;
+    font-family: Fira Code;
+
+}
+
+.lists {
+    display: flex;
+    align-items: flex-start;
+    gap: 32px;
+    list-style: none;
+}
+
+.link {
+    text-decoration: none;
+    color: #ABB2BF;
+    font-size: 16px;
+    font-family: Fira Code;
+    font-weight: 400;
+    word-wrap: break-word;
+    transition: all 0.4s ease-in-out;
+}
+
+.link::before {
+    content: "#";
+    /* Add the # symbol before the link text */
+    color: #C778DD;
+    /* Set the color of the # symbol */
+}
+
+
+.link:hover {
+    color: var(--secondary_color);
+    transition: all 0.4s ease-in-out;
+}
+
+.home_link {
+    color: white;
+    font-size: 1.6rem;
+    font-family: Fira Code;
+    font-weight: 500;
+    word-wrap: break-word
+}
+
+/* Icons */
+
+.line {
+    margin-left: 3rem;
+    position: fixed;
+}
+
+.icon_container {
+    display: flex;
+    flex-direction: column;
+    width: 3.2rem;
+}
+
+.icon_container :nth-child(2) {
+    margin-left: 1.5rem;
+    position: fixed;
+    margin-top: 20rem;
+}
+
+.icon_container :nth-child(3) {
+    margin-left: 1.5rem;
+    position: fixed;
+    margin-top: 23.5rem;
+}
+
+/* Hero Section */
+
+.info {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.info div {
+    width: 40%;
+}
+
+.info img {
+    width: 50rem;
+    height: 50rem;
+}
