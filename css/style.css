@@ -361,8 +361,13 @@ nav a:hover::after {
         margin-top: 6rem;
     }
 
+    .content h1,
+    .content h2 {
+        font-size: 1.5rem;
+    }
+
     .ui_ux {
-        font-size: 2rem;
+        font-size: 3rem;
     }
 
     .designer {
@@ -490,3 +495,8 @@ main.row {
         font-size: 1.5rem;
     }
 }
+
+
+/* Project Section */
+
+
