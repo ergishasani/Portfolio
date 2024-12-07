@@ -500,3 +500,132 @@ main.row {
 /* Project Section */
 
 
+
+/* Contact Section */
+.contact_section {
+    width: 100%;
+    height: 50vh !important;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact_container {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Footer Section */
+.footer {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 30vh;
+    justify-content: center;
+    gap: 2rem;
+    align-items: center;
+}
+
+.footer_link {
+    font-size: 2.7rem;
+    text-decoration: none;
+    font-family: var(--header_font);
+    color: #878787;
+    font-weight: bold;
+    letter-spacing: 0.6rem;
+    /* Keep the margin for positioning */
+    position: relative;
+    /* Required for the pseudo-element positioning */
+    display: inline-block;
+    /* Ensures the underline effect aligns correctly */
+    transition: color 0.3s ease;
+    max-width: fit-content;
+    /* Smooth color transition */
+}
+
+.footer_links li a {
+    font-size: 1.6rem;
+    text-decoration: none;
+    color: var(--secondary_color);
+    font-family: var(--main_font);
+    position: relative;
+    /* Required for the underline effect */
+    display: inline-block;
+    /* Ensures underline effect aligns properly */
+    transition: color 0.3s ease;
+    /* Smooth text color transition */
+}
+
+.footer_links li a:hover {
+    color: #f28a31;
+    /* Change text color on hover */
+}
+
+.footer_links li a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    /* Adjust underline position */
+    width: 0;
+    height: 3px;
+    /* Thickness of the underline */
+    background-color: #f28a31;
+    /* Underline color */
+    transition: width 0.3s ease;
+    /* Smooth underline animation */
+}
+
+.footer_links li a:hover::after {
+    width: 100%;
+    /* Full underline on hover */
+}
+
+.footer_links {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.footer_links li {
+    list-style: none;
+}
+
+.footer_links li a {
+    text-decoration: none;
+    font-size: 1.6rem;
+    color: var(--secondary_color);
+    font-family: var(--main_font);
+}
+
+.socials img {
+    margin-right: 2rem;
+}
+
+#footer_link {
+    margin: 0;
+}
+
+
+
+@media screen and (max-width: 768px) {
+
+    .footer {
+        max-height: fit-content;
+        margin-bottom: 8rem;
+        margin-top: 2rem;
+    }
+
+    .footer_links {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
