@@ -109,25 +109,15 @@ nav ul li a {
 
 .cv_btn {
     background-color: var(--main_color);
-    /* Main background color */
     color: white;
-    /* Button text color */
     border-radius: 0.3rem;
-    /* Rounded corners */
     padding: 0.8rem 1.5rem;
-    /* Spacing inside the button */
     font-size: 1.5rem;
-    /* Font size for text */
     font-weight: bold;
-    /* Bold text */
     text-decoration: none;
-    /* Remove underline if it’s a link */
     border: none;
-    /* No border */
     cursor: pointer;
-    /* Pointer cursor on hover */
     transition: background-color 0.3s ease, transform 0.3s ease;
-    /* Smooth transition for hover effect */
 }
 
 nav a {
@@ -206,9 +196,10 @@ nav a:hover::after {
 
 /* Responsive Styles */
 @media screen and (max-width: 768px) {
-    header{
+    header {
         height: 6rem;
     }
+
     .nav_links {
         position: fixed;
         top: 0;
@@ -243,6 +234,88 @@ nav a:hover::after {
 }
 
 
-.profile img{
-    width: 10rem;
+/* Hero Section */
+.container {
+    width: 100%;
+    height: 85vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.container_div {
+    width: 70%;
+    height: 60vh;
+    display: flex;
+    flex-direction: row;
+}
+
+.content {
+    width: 80%;
+    height: auto;
+}
+
+.profile img {
+    width: 40rem;
+    border-radius: 25rem;
+}
+
+.content h1 {
+    font-size: 1.4rem;
+    font-family: var(--main_font);
+    color: var(--secondary_color);
+    font-weight: 800;
+    max-width: fit-content;
+}
+
+.content h2 {
+    font-size: 1.6rem;
+    font-family: var(--main_font);
+    color: var(--main_color);
+    font-weight: 800;
+    letter-spacing: 0.1rem;
+    max-width: fit-content;
+}
+
+.ui_ux {
+    font-size: 6rem;
+    font-family: var(--main_font);
+    color: var(--secondary_color);
+    font-weight: bolder;
+    max-width: fit-content;
+}
+
+.designer {
+    margin-left: 6rem;
+}
+
+.about_text {
+    font-size: 1.5rem;
+    font-family: var(--main_font);
+    color: var(--secondary_color);
+    max-width: 55rem;
+    margin-bottom: 3rem;
+}
+
+.btn {
+    background-color: var(--main_color);
+    color: white;
+    border-radius: 0.3rem;
+    padding: 1rem 3rem;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.btn:hover {
+    background-color: var(--secondary_color);
+    /* Change background color on hover */
+    color: var(--main_color);
+    /* Change text color on hover for contrast */
+    transform: scale(1.03);
+    /* Slightly enlarge the button */
 }
