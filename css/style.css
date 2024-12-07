@@ -26,3 +26,104 @@ body {
 
 
 /* Header */
+
+
+header {
+    width: 100%;
+    height: 10rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+nav {
+    margin-left: 12rem ;
+    width: 70%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav_link {
+    font-size: 2.7rem;
+    text-decoration: none;
+    font-family: var(--header_font);
+    color: #878787;
+    font-weight: bold;
+    letter-spacing: 0.6rem;
+
+}
+
+nav ul {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 53px;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    gap: 2rem;
+}
+
+nav ul li a {
+    font-size: 1.6rem;
+    text-decoration: none;
+    color: var(--secondary_color);
+    padding: 9px 12px;
+    font-family: var(--main_font);
+}
+
+.cv_btn {
+    background-color: var(--main_color); /* Main background color */
+    color: white; /* Button text color */
+    border-radius: 0.3rem; /* Rounded corners */
+    padding: 0.8rem 1.5rem; /* Spacing inside the button */
+    font-size: 1.5rem; /* Font size for text */
+    font-weight: bold; /* Bold text */
+    text-decoration: none; /* Remove underline if it’s a link */
+    border: none; /* No border */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transition for hover effect */
+}
+
+nav a {
+    cursor: pointer;
+    transition: color 0.3s ease, text-decoration 0.3s ease;
+    /* Smooth transition for the color and underline */
+
+}
+
+nav a {
+    position: relative;
+    display: inline-block;
+    color: #878787;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #f28a31;
+}
+
+nav a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    width: 0;
+    height: 2px;
+    background-color: #f28a31;
+    transition: width 0.3s ease;
+}
+
+nav a:hover::after {
+    width: 100%;
+}
+
+
+.cv_btn:hover {
+    background-color: var(--secondary_color); /* Change background color on hover */
+    transform: scale(1.03); /* Slightly enlarge the button */
+}
+
+
