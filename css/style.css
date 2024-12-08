@@ -389,6 +389,11 @@ nav a:hover::after {
     height: fit-content;
 }
 
+.about_cont {
+    background-color: #121212;
+
+}
+
 .container_about {
     display: flex;
     flex-direction: column;
@@ -495,6 +500,74 @@ main.row {
         font-size: 1.5rem;
     }
 }
+
+/* Skills Section */
+
+.skills-section {
+    padding: 2rem;
+    font-family: var(--main_font);
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.skills-section h2 {
+    font-size: 3rem;
+    color: var(--main_color);
+    margin-bottom: 1.5rem;
+    font-family: var(--main_font);
+}
+
+.skills_p {
+    font-size: 2rem;
+    font-family: var(--main_font);
+    color: var(--secondary_color);
+    font-weight: bold;
+    margin-bottom: 2rem;
+}
+
+
+.skills-description {
+    font-size: 1.6rem;
+    color: var(--secondary_color);
+    margin-bottom: 3rem;
+    font-family: var(--main_font);
+}
+
+.skill {
+    margin-bottom: 2rem;
+    text-align: left;
+    /* Align skills to the left for a structured look */
+}
+
+.skill h3 {
+    font-size: 1.8rem;
+    color: var(--secondary_color);
+    margin-bottom: 0.5rem;
+    font-family: var(--main_font);
+}
+
+.skill-bar {
+    width: 100%;
+    height: 2rem;
+    background-color: #333;
+    border-radius: 0.5rem;
+    overflow: hidden;
+    position: relative;
+}
+
+.skill-fill {
+    height: 100%;
+    background-color: var(--main_color);
+    width: 0;
+    /* Initial width for animation */
+    border-radius: 0.5rem;
+    transition: width 1.5s ease-in-out;
+    /* Smooth transition */
+}
+
+
+
 
 /* Project Section */
 .projects {
