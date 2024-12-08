@@ -311,6 +311,7 @@ nav a:hover::after {
     border-radius: 0.3rem;
     padding: 1rem 3rem;
     font-size: 1.5rem;
+    font-family: var(--main_font);
     font-weight: bold;
     text-decoration: none;
     border: none;
@@ -362,12 +363,12 @@ nav a:hover::after {
 
     .content {
         width: 95%;
-        margin-top: 6rem;
+        margin-top: 10rem;
     }
 
     .content h1,
     .content h2 {
-        font-size: 1.5rem;
+        font-size: 1.8rem;
     }
 
     .ui_ux {
