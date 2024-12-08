@@ -496,9 +496,120 @@ main.row {
     }
 }
 
-
 /* Project Section */
+.projects {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 3rem 1rem;
+    width: 100%;
+    background-color: #121212;
+    /* Adjust the background if needed */
+}
 
+.projects a {
+    text-decoration: none;
+
+}
+
+.projects h2 {
+    font-size: 3rem;
+    font-family: var(--main_font);
+    color: var(--main_color);
+    margin-bottom: 1rem;
+}
+
+.project_p {
+    font-size: 1.6rem;
+    font-family: var(--main_font);
+    color: var(--secondary_color);
+    width: 70%;
+    /* Adjust width for better responsiveness */
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.project_div {
+    display: flex;
+    flex-wrap: wrap;
+    /* Allows wrapping on smaller screens */
+    gap: 5rem;
+    /* Space between cards */
+    justify-content: center;
+    align-items: flex-start;
+    max-width: 90%;
+}
+
+/* Card Styles */
+.card {
+    height: 30rem;
+    width: 26rem !important;
+    background-color: #222;
+    /* Change as per your design */
+    color: #fff;
+    /* Ensures text is readable */
+    border-radius: 0.5rem;
+    border: 1px solid var(--main_color);
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+.card img {
+    width: 100%;
+    /* Ensures the image covers the card */
+    height: 12rem;
+    object-fit: cover;
+    /* Keeps the aspect ratio of the image */
+}
+
+.card-body {
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: calc(100% - 12rem);
+}
+
+.card-title {
+    font-size: 1.7rem;
+    font-weight: bold;
+    color: var(--main_color);
+    margin-bottom: 0.5rem;
+    font-family: var(--main_font);
+
+}
+
+.card-text {
+    font-size: 1.4rem;
+    color: var(--secondary_color);
+    font-family: var(--main_font);
+    flex-grow: 1;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.project_btn {
+    text-decoration: none;
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: var(--main_color);
+    padding: 0.5rem 1rem;
+    background-color: var(--secondary_color);
+    border-radius: 0.5rem;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.project_btn:hover {
+    background-color: var(--main_color);
+    color: var(--secondary_color);
+}
 
 
 /* Testimonials Section */
@@ -522,7 +633,7 @@ main.row {
 .test_p {
     max-width: 50%;
     margin-bottom: 4rem;
-    font-size: 1.3rem;
+    font-size: 1.6rem;
     font-family: var(--main_font);
     color: var(--secondary_color);
 }
@@ -728,6 +839,8 @@ hr {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    background-color: #121212;
+
 }
 
 .contact_container {
