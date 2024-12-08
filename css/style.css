@@ -265,7 +265,7 @@ nav a:hover::after {
 }
 
 .content h1 {
-    font-size: 1.4rem;
+    font-size: 2rem;
     font-family: var(--main_font);
     color: var(--secondary_color);
     font-weight: 800;
@@ -273,7 +273,7 @@ nav a:hover::after {
 }
 
 .content h2 {
-    font-size: 1.6rem;
+    font-size: 2.2rem;
     font-family: var(--main_font);
     color: var(--main_color);
     font-weight: 800;
