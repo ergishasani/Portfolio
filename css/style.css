@@ -501,6 +501,225 @@ main.row {
 
 
 
+/* Testimonials Section */
+
+.testimonials-section {
+    text-align: center;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: fit-content;
+    align-items: center;
+}
+
+.testimonials-section h2 {
+    font-size: 3rem;
+    font-family: var(--main_font);
+    color: var(--main_color);
+}
+
+.test_p {
+    max-width: 50%;
+    margin-bottom: 4rem;
+    font-size: 1.3rem;
+    font-family: var(--main_font);
+    color: var(--secondary_color);
+}
+
+/* Testimonials Section */
+.testimonials {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 2rem;
+    width: 80%;
+}
+
+.testimonial {
+    max-width: 300px;
+    text-align: center;
+}
+
+.testimonial h2 {
+    font-size: 2.4rem;
+    font-family: var(--main_font);
+    color: var(--secondary_color);
+}
+
+.testimonial p {
+    font-size: 1.3rem;
+    margin: 1rem 0;
+    font-family: var(--main_font);
+    color: var(--secondary_color);
+}
+
+h4 {
+    font-size: 1.6rem;
+    color: var(--main_color);
+    font-family: var(--main_font);
+    margin: 0.5rem 0;
+}
+
+.position {
+    font-size: 1rem;
+    font-family: var(--main_font);
+    color: #aaaaaa;
+}
+
+/* Stars Animation */
+.stars {
+    color: transparent;
+    display: inline-block;
+    font-size: 2rem;
+    transition: color 0.5s ease-in-out;
+}
+
+.stars span {
+    color: transparent;
+
+}
+
+.stars.filled span {
+    color: gold;
+}
+
+hr {
+    width: 87%;
+
+    border: none;
+    /* Remove default border style */
+    border-top: 2px solid var(--main_color);
+    /* Change this to your desired color */
+    margin: 1rem 0;
+    /* Optional: Adjust spacing */
+
+
+}
+
+/* Statistics Section */
+.statistics {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 1.5rem;
+}
+
+.stat {
+    text-align: center;
+}
+
+.stat h3 {
+    font-size: 2rem;
+    font-family: var(--main_font);
+    color: var(--main_color);
+    margin: 0;
+}
+
+.stat p {
+    font-size: 1.5rem;
+    color: var(--secondary_color);
+}
+
+/* Statistic Section */
+.statistics-section {
+    padding: 2rem 0;
+    text-align: center;
+}
+
+.statistics {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.stat {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 1.5rem;
+    width: 23rem;
+}
+
+.stat h3 {
+    font-size: 5rem;
+    font-family: var(--main_font);
+    margin: 0;
+}
+
+.stat p {
+    font-size: 2rem;
+    font-family: var(--main_font);
+    color: var(--secondary_color);
+    margin: 0.5rem 0 0;
+}
+
+.line {
+    width: 1px;
+    margin-right: 5rem;
+    margin-left: 5rem;
+    height: 22rem;
+    background: linear-gradient(to bottom, transparent, var(--main_color), transparent);
+}
+
+.stat div {
+    display: flex;
+    flex-direction: row;
+    height: fit-content;
+    width: fit-content;
+    justify-content: center;
+    align-items: center;
+}
+
+.stat div p {
+    margin-left: 0.3rem;
+    font-size: 4rem;
+    color: var(--main_color);
+}
+
+@media screen and (max-width: 768px) {
+    .testimonials {
+        display: flex;
+        flex-direction: column;
+        height: fit-content;
+    }
+
+    .line {
+        display: none;
+    }
+
+    .test_p {
+        max-width: fit-content;
+    }
+
+    .stars.filled span {
+        color: gold;
+    }
+
+    .testimonial {
+        border-bottom: 1px solid var(--main_color);
+        margin-bottom: 2rem;
+    }
+
+    .test_last {
+        border-bottom: 0;
+    }
+
+    .statistics-section {
+        margin-top: 0;
+
+    }
+
+    .statistics {
+        display: flex;
+        flex-direction: column;
+        height: fit-content;
+        margin-bottom: 2rem;
+        margin-top: 0;
+
+    }
+}
+
+
 /* Contact Section */
 .contact_section {
     width: 100%;
@@ -588,7 +807,7 @@ form button {
 
     input {
         padding: 1.2rem 10rem;
-    margin-bottom: 3rem;
+        margin-bottom: 3rem;
     }
 
     form button {
