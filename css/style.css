@@ -199,6 +199,9 @@ nav a:hover::after {
 @media screen and (max-width: 768px) {
     header {
         height: 6rem;
+        position: fixed;
+        background-color: #1E1E1E;
+        z-index: 1000;
     }
 
     .nav_links {
@@ -908,12 +911,13 @@ hr {
 /* Contact Section */
 .contact_section {
     width: 100%;
-    height: 40vh;
+    height: 50vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     background-color: #121212;
+    margin-bottom: 2rem;
 
 }
 
@@ -987,6 +991,7 @@ form button:hover {
 
     .contact_container h2 {
         font-size: 2.5rem;
+        margin-top: 2rem;
     }
 
     .contact_container p {
@@ -997,7 +1002,7 @@ form button:hover {
     form {
         display: flex;
         flex-direction: column;
-        margin-bottom: 10rem;
+        margin-bottom: 2rem;
         align-items: center;
     }
 
@@ -1113,8 +1118,9 @@ form button:hover {
 
     .footer {
         max-height: fit-content;
-        margin-bottom: 8rem;
+        margin-bottom: 2rem;
         margin-top: 2rem;
+        height: fit-content;
     }
 
     .footer_links {
