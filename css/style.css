@@ -418,6 +418,7 @@ nav a:hover::after {
     font-size: 1.6rem;
     font-family: var(--main_font);
     color: var(--secondary_color);
+    margin-bottom: 2rem;
 }
 
 main.row {
